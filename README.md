@@ -1,5 +1,8 @@
 ### Projeto exemplo Spring Boot e Vue.js
 
+### Referência do projeto
+https://github.com/marcelomrwin/springboot-vuejs
+
 ### Build do projeto
 
 Na raiz do projeto
