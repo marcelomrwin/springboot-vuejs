@@ -300,4 +300,6 @@ dist/
 npm-debug.log
 yarn-error.log
 
+frontend/node
+
 # End of https://www.gitignore.io/api/node,vuejs,linux,macos,maven,eclipse,intellij
