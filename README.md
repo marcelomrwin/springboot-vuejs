@@ -14,11 +14,13 @@ Para executar o projeto
 mvn --projects backend spring-boot:run
 ```
 
+### Testar a aplicação
+
 Acessar a URL http://localhost:8088
 
 **O Spring Dev-Tools está habilitado permitindo assim redeploy na medida que o código é atualizado**
 
-Habilitando Live Reload na interface Vue.js
+### Habilitando Live Reload na interface Vue.js
 
 Navegar até a pasta frontend e digitar
 ```
