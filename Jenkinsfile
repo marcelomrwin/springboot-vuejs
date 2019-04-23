@@ -82,6 +82,7 @@ pipeline{
         steps {
           script {
             timeout(time: 5, unit: 'MINUTES') {
+              sh 'mvn clean package -Pdeploy-domain -DskipTests';
               sh 'mvn --projects backend wildfly:undeploy wildfly:deploy -Pdeploy-domain -DskipTests';
             }
           }
