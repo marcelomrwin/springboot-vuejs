@@ -7,17 +7,22 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTest;
+import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.boot.test.autoconfigure.orm.jpa.TestEntityManager;
 import org.springframework.test.context.junit4.SpringRunner;
 
 import com.example.springvue.domain.User;
+import com.example.springvue.SpringVueApplication;
+import org.springframework.test.context.ContextConfiguration;
 
 import static org.hamcrest.Matchers.contains;
 import static org.junit.Assert.*;
 
 @RunWith(SpringRunner.class)
 @DataJpaTest
+@ContextConfiguration(classes=SpringVueApplication.class)
 public class UserRepositoryTest {
+
 	@Autowired
     private TestEntityManager entityManager;
 
