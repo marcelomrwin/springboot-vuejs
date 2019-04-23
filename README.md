@@ -29,3 +29,9 @@ Navegar até a pasta frontend e digitar
 ```
 npm run serve
 ```
+
+### Fazer deploy no wildfly
+
+```
+mvn --projects backend wildfly:undeploy wildfly:deploy -Pdeploy-domain -DskipTests
+```
