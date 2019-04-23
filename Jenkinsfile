@@ -135,6 +135,16 @@ pipeline{
         }
     }
 
+    stage('Deploy to Dev Wildfly'){
+        steps {
+          script {
+            timeout(time: 5, unit: 'MINUTES') {
+              sh 'mvn --projects backend wildfly:undeploy wildfly:deploy -Pdeploy-domain -DskipTests';
+            }
+          }
+        }
+    }
+
   }
   post {
     always {
